@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Gmail Tweaks",
+    "short_name": "Gmail Tweaks",
+    "version": "0.1",
+    "author": "Michael Orr",
+    "description": "An extension for modifying gmail interface",
+    "icons": { "16": "images/beaker_16.png",
+               "48": "images/beaker_48.png",
+               "128": "images/beaker_128.png" },
+    "content_scripts": [{
+        "matches": ["*://mail.google.com/*"],
+        "css": ["extension.css"]
+    }]
+}
